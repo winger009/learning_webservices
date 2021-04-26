@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>web service</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMAA_SOAP_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMAA_SOAP_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMAA_SOAP_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>soap 1 get</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ID_IMPORT</PARAMETER>
+       <TYP>SFLIGHT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_TAB</PARAMETER>
+       <TYP>TY_FLIGHTS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ID_IMPORT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flight</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table of Flights</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMAA_SOAP_GET_2</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>soap 1 get</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ID_IMPORT</PARAMETER>
+       <TYP>I</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ED_TEXT</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ID_IMPORT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flight</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ED_TEXT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
